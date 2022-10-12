@@ -26,6 +26,7 @@ image1 = 'https://raw.githubusercontent.com/wlyi1/random/main/Random/a3a.png'
 #image2 = Image.open('a3a.png')
 st.image(image1)
 #st.image(image2)
+#stwrite
 
 list_rand = data.name
 tgl_random = datetime.datetime.now()
