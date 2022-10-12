@@ -46,7 +46,7 @@ deta = Deta(st.secrets["project_key"])
 
 # Create a new database "example-db sss"
 # If you need a new database, just use another name.
-db = deta.Base("random2")
+db = deta.Base("random1")
 
 if st.button('Show'):
     st.image(image3)
