@@ -66,13 +66,6 @@ if submitted:
     db.put({"name": name, "age": age})
 
 st.write('Test Your Knowledge')
-st.write('Test number 2')
-st.write('test 3 commited')
-st.wrtie('test 4 commit')
-st.write('test 5 git command')
-st.write('test66')
-st.wrtie('susah amat sss')
-st.write('buset')
 
 "Here's everything stored in the database:"
 # This reads all items from the database and displays them to your app.
