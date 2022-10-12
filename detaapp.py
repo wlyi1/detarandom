@@ -46,33 +46,33 @@ deta = Deta(st.secrets["project_key"])
 
 # Create a new database "example-db sss"
 # If you need a new database, just use another name.
-db = deta.Base("random1")
+db = deta.Base("random2")
 
 if st.button('Show'):
     st.image(image3)
-    db.put({'name' : today_rand, 'age' : 90})
-
-# Data to be written to Deta Base
-with st.form("form"):
-    name = st.text_input("Your name")
-    age = st.number_input("Your age")
-    submitted = st.form_submit_button("Store in database")
+    db.put({'Tanggal' : tgl_random, 'Random' : today_rand})
 
 
-# If the user clicked the submit button,
-# write the data from the form to the database.
+# Data to be written to Deta Base of Cerita
+db1 = deta.Base('Cerita')
+with st.form("my_form"):
+    st.write("Ceritain ke RandomKu dong tentang aktivitas randommu hari ini 😃")
+    nama = st.text_input("Namanya? ")
+    age = st.number_input('Umurnya? ', min_value=5, max_value=70)
+    cerita = st.text_input("Cerita singkatnya gimana nih?")
+    submitted = st.form_submit_button("Submit")
+
+# If the user clicked the submit button. write the data from the form to the database.
 # You can store any data you want here. Just modify that dictionary below (the entries between the {}).
+
 if submitted:
-    db.put({"name": name, "age": age})
+    db1.put({"Nama": nama, 'Umur' : age, "Cerita": cerita})
 
 st.write('Test Your Knowledge')
 
-"Here's everything stored in the database:"
-# This reads all items from the database and displays them to your app.
-# db_content is a list of dictionaries. You can do everything you want with it.
 db_content = db.fetch().items
 st.write(db_content)
 df = pd.DataFrame(db_content)
-st.dataframe(df)
+st.write(df['Random'][0])
 
 
