@@ -12,12 +12,12 @@ import pandas as pd
 
 #Data Sources
 data = pd.read_csv('rand_aktivitas.csv')
-image1 = Image.open('a2.png')
-image2 = Image.open('a3a.png')
-image3 = Image.open('dw.png')
+image1 = 'https://raw.githubusercontent.com/wlyi1/random/main/Random/a3a.png'
+#image2 = Image.open('a3a.png')
+image3 = "https://raw.githubusercontent.com/wlyi1/random/main/Random/dw.png"
 
 st.image(image1)
-st.image(image2)
+#st.image(image2)
 
 list_rand = data.name
 tgl_random = datetime.datetime.now()
