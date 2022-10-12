@@ -9,6 +9,7 @@ with st.form("form"):
     submitted = st.form_submit_button("Store in database")
 
 st.write('Test Your Knowledge')
+st.write('Test number 2')
 
 # Connect to Deta Base with your Project Key
 deta = Deta(st.secrets["project_key"])
