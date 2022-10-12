@@ -9,6 +9,13 @@ from datetime import datetime as dt
 from deta import Deta
 import pandas as pd
 
+def _font_as_bytes():
+    with open('https://raw.githubusercontent.com/wlyi1/random/main/Random/Quicksand-Regular.ttf', 'rb') as f:
+        font_bytes = BytesIO(f.read())
+    return font_bytes
+
+resp = requests.get('https://raw.githubusercontent.com/wlyi1/detarandom/master/dw.png')
+image3 = Image.open(BytesIO(resp.content))
 
 #Data Sources
 data = pd.read_csv('rand_aktivitas.csv')
