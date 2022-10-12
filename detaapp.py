@@ -14,7 +14,7 @@ def _font_as_bytes():
         font_bytes = BytesIO(f.read())
     return font_bytes
 
-resp = requests.get('https://raw.githubusercontent.com/wlyi1/detarandom/master/dw.png')
+resp = requests.get('https://raw.githubusercontent.com/wlyi1/random/main/Random/dw.png')
 image3 = Image.open(BytesIO(resp.content))
 
 #Data Sources
