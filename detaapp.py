@@ -10,6 +10,7 @@ with st.form("form"):
 
 st.write('Test Your Knowledge')
 st.write('Test number 2')
+st.write('test 3 commited')
 
 # Connect to Deta Base with your Project Key
 deta = Deta(st.secrets["project_key"])
