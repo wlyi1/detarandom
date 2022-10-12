@@ -12,7 +12,7 @@ st.write('Test Your Knowledge')
 st.write('Test number 2')
 st.write('test 3 commited')
 st.wrtie('test 4 commit')
-
+st.write('test 5 git command')
 # Connect to Deta Base with your Project Key
 deta = Deta(st.secrets["project_key"])
 
