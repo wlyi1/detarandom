@@ -24,8 +24,6 @@ image3 = Image.open(BytesIO(resp.content))
 data = pd.read_csv('rand_aktivitas.csv')
 image1 = 'https://raw.githubusercontent.com/wlyi1/random/main/Random/a3a.png'
 #image2 = Image.open('a3a.png')
-image3 = "https://raw.githubusercontent.com/wlyi1/random/main/Random/dw.png"
-
 st.image(image1)
 #st.image(image2)
 
