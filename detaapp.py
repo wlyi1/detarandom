@@ -35,7 +35,7 @@ img.text((450,390), hari, font=font1, fill=(0,0,0))
 # Connect to Deta Base with your Project Key
 deta = Deta(st.secrets["project_key"])
 
-# Create a new database "example-db"
+# Create a new database "example-db sss"
 # If you need a new database, just use another name.
 db = deta.Base("random1")
 
