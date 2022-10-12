@@ -30,6 +30,7 @@ st.image(image1)
 list_rand = data.name
 tgl_random = datetime.datetime.now()
 today_rand = random.choice(list_rand)
+hari = dt.today().strftime('%Y-%m-%d')
 path_font = "Quicksand-Regular.ttf"
 path_font_2 = 'Quicksand-Bold.ttf'
 font = ImageFont.truetype(path_font, 55)
